@@ -4,9 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | Confessions</title>
+
+    <style>
+      html, body {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        background-color: #1A1A1A;
+      }
+
+      #unity-canvas {
+        width: auto;
+        height: 100%;
+        max-width: 100%;
+        display: block;
+      }
+    </style>
+    
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1600 height=900 tabindex="-1" style="width: 1600px; height: 900px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1600 height=900 tabindex="-1" style="background: #231F20"></canvas>
     <script src="Build/BuildConfess.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
